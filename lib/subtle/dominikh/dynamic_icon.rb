@@ -26,7 +26,7 @@ module Dominikh
     def to_str
       s = super
       if color
-        return color + s + Subtlext::Color.new(::COLORS[:fg_sublets])
+        return color + s + Subtlext::Subtle.colors[:fg_sublets].to_s
       else
         return s
       end
